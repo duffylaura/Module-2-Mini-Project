@@ -3,7 +3,7 @@
 }
 
 :root {
-    --background-color: rgb(248, 234, 184);
+    --background-color: black;
     --header-text: pink;
     --header-font-size: 15px;
     --text-light: white;
@@ -16,7 +16,6 @@ background-color: var(--background-color);
 }
 
 header {
- /*display: flex;*/
  text-align: center;  
 }
 
@@ -37,26 +36,16 @@ header p {
 }
 
 .Short-Card-Format section {
-    /*display: flex; */
     border: dashed;
-    border-color: var(--Card-Borders);
-    border-radius: 25px;
-    color: --text-light;
+    border-color: var(--Card-Border);
+    color: var(--text-light);
     font-size: var(--Card-Font-Size);
     padding: 15px;
-    /* margin-left: 50px;
-    margin-right: 50px; */
 }
-/*
-.Short-Card-Format::after {
-    content:"'";
-    clear:both;
-    display: table;
-}
-*/
+
 .Short-Card-Format header {
-    /*display: flex; */
     border: solid;
+    border-radius: 25px;
     border-color: var(--Card-Border);
     z-index: +1;
     position:relative;
@@ -65,5 +54,44 @@ header p {
     left: 25%;
     bottom: 25px;
     width: 50%;
-    
 }
+
+.code-format {
+    border-radius: 25px;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(202, 88, 88, 0) 70.71%),
+            linear-gradient(127deg, rgba(224, 112, 26, 0.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(241, 201, 241, 0.8), rgba(0,0,255,0) 70.71%);
+}
+
+.Long-Card-Format {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 20px;
+}
+
+.Long-Card-Format section {
+    border: dashed;
+    border-color: var(--Card-Border);
+    color: var(--text-light);
+    font-size: var(--Card-Font-Size);
+    padding: 15px;
+}
+
+.Long-Card-Format header {
+    border: solid;
+    border-radius: 25px;
+    border-color: var(--Card-Border);
+    z-index: +1;
+    position:relative;
+    background-color: var(--background-color);
+    position: relative;
+    left: 25%;
+    bottom: 25px;
+    width: 50%;}
+
+    footer {
+        display: flex; 
+        justify-content: center;
+    }
