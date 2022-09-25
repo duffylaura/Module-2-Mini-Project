@@ -1,19 +1,47 @@
 :root {
-    --
+    --background-color: black;
+    --header-text: pink;
+    --header-font-size: 15px;
+    --text-light: white;
+    --Card-Border: white; 
+    --Card-Font-Size: 15px; 
 }
 
 body {
--
+background-color: var(--background-color);
 }
 
 header {
--
+ display: flex;   
 }
 
-main {
-    -
+header p {
+    color: var(--text-light)
 }
 
-footer {
-    
+.Large-Font {
+    color: var(--header-text);
+    font-size: var(--header-font-size);
+}
+
+.Short-Card-Format {
+    display: flex;
+    flex-direction: row;
+}
+
+.Short-Card-Format section {
+    display: flex; 
+    border: dashed;
+    border-color: var(--Card-Borders);
+    border-radius: 25px;
+    color: --text-light;
+    font-size: var(--Card-Font-Size);
+}
+
+.Short-Card-Format header {
+    display: flex; 
+    border: solid;
+    border-color: var(--Card-Border);
+    z-index: +1;
+    position:relative;
 }
